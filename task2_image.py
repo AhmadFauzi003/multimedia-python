@@ -3,7 +3,7 @@ from PIL import Image, ImageFilter, ImageEnhance
 def manipulate_image(input_path, output_path):
     try:
         # Memuat gambar
-        image = Image.open(/workspaces/multimedia-python/test.jpg)
+        image = Image.open("/workspaces/multimedia-python/test.jpg")
         print("✅ Gambar berhasil dimuat")
 
         # Operasi Cropping dengan validasi ukuran
@@ -15,7 +15,7 @@ def manipulate_image(input_path, output_path):
             raise ValueError("Gambar terlalu kecil untuk di-crop ke ukuran 200x200")
 
         # Operasi Resizing dengan rasio aspek yang dipertahankan
-        resized_image = cropped_image.resize((100, 100), Image.ANTIALIAS)
+        resized_image = cropped_image.resize((100, 100), Image.Resampling.LANCZOS)  # Update here
         resized_image.save('resized_' + output_path)
         print("✅ Resizing berhasil")
 

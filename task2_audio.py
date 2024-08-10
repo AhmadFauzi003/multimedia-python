@@ -4,7 +4,7 @@ from pydub.playback import play
 def manipulate_audio(input_path, output_path):
     try:
         # Memuat file audio
-        audio = AudioSegment.from_file(input_path)
+        audio = AudioSegment.from_file("/workspaces/multimedia-python/neffex.mp3")
         print("✅ Audio berhasil dimuat")
 
         # Operasi Pemotongan dengan validasi durasi
