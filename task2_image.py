@@ -3,7 +3,7 @@ from PIL import Image, ImageFilter, ImageEnhance
 def manipulate_image(input_path, output_path):
     try:
         # Memuat gambar
-        image = Image.open(input_path)
+        image = Image.open(/workspaces/multimedia-python/test.jpg)
         print("✅ Gambar berhasil dimuat")
 
         # Operasi Cropping dengan validasi ukuran
